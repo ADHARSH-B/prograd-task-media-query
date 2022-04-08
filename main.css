@@ -1,0 +1,35 @@
+.card{
+    border :2px solid blue;
+    padding:24px;
+    text-align: center;
+    box-shadow: 2px 2px 2px 2px gray;
+    box-sizing: border-box;
+    width: 500px;
+    height: 250px;
+    margin-left: 20px;
+    /* text-overflow: ellipsis;  */
+    resize: vertical;
+    overflow: hidden;
+}
+
+
+.main{
+    display: flex;  
+}
+
+@media (max-width:900px) {
+    .main
+    {
+        flex-flow: column;
+        align-items: center;
+        width: 100%;
+        
+    }
+}
+
+@media print {
+    html{
+        display: none;
+
+    }
+}
